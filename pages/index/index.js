@@ -12,10 +12,16 @@ Page({
       {url:'../../static/img/banner_2.png'},
       {url:'../../static/img/banner_3.png'},
     ],
+    list_height:'',
   },
   //options(Object)
   onLoad: function(options) {
-    
+    let height = wx.getSystemInfoSync().windowHeight
+		let width = wx.getSystemInfoSync().windowWidth
+		height = height * 750 / width - 320
+		this.setData({
+			list_height: height
+		})
   },
   onReady: function() {
     

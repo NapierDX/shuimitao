@@ -5,4 +5,29 @@
       <image class="banner" src="{{item.url}}"/>
     </swiper-item>
   </swiper>
+  <scroll-view class="scroll" scroll-y="{{true}}" bindscrolltolower="getmore" style="height:{{list_height}}rpx">
+    <view class="scroll-box">
+        <view class="good-box">
+          <image style="width:370rpx;position:relative;border-radius: 16rpx 16rpx 0 0;height:200rpx;background:rgba(150,150,150,1)" mode="aspectFit" />
+          <view class="name-box">
+          </view>
+        </view>
+        <view class="good-box">
+          <image style="width:370rpx;position:relative;border-radius:  16rpx 16rpx 0 0;height:400rpx;background:rgba(150,150,150,1)" mode="aspectFit" />
+          <view class="name-box">
+          </view>
+        </view>
+        <view class="good-box">
+          <image style="width:370rpx;position:relative;border-radius:  16rpx 16rpx 0 0;height:290rpx;background:rgba(150,150,150,1)" mode="aspectFit" />
+          <view class="name-box">
+          </view>
+        </view>
+        <view class="good-box">
+          <image style="width:370rpx;position:relative;border-radius:  16rpx 16rpx 0 0;height:350rpx;background:rgba(150,150,150,1)" mode="aspectFit" />
+          <view class="name-box">
+          </view>
+        </view>
+    </view>
+    <view style="width:750rpx;height:60rpx"></view>
+  </scroll-view>
 </view>

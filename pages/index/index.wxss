@@ -14,3 +14,33 @@ page{
   height: 300rpx;
   width: 750rpx;
 }
+
+.scroll{
+  width: 750rpx;
+  margin-top: 10rpx;
+  position: relative;
+}
+
+.scroll-box{
+  width: 740rpx;
+  position: relative;
+  column-count:2;
+  border-radius: 16rpx;
+}
+
+.good-box{
+  width: 370rpx;
+  margin-top: 5rpx;
+  margin-bottom: 60rpx;
+  position: relative;
+}
+
+.name-box{
+  width: 370rpx;
+  position: absolute;
+  left: 0;
+  bottom: -42rpx;
+  height: 50rpx;
+  background:royalblue;
+  border-radius: 0 0  16rpx 16rpx;
+}
