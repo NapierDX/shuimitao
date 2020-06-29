@@ -1,0 +1,16 @@
+/**index.wxss**/
+page{
+  background: #f9f9f9;
+}
+
+.top-banner{
+  height: 300rpx;
+  width: 750rpx;
+  position: relative;
+  background: #ffffff;
+}
+
+.banner{
+  height: 300rpx;
+  width: 750rpx;
+}

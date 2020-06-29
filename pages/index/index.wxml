@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view>
+  <swiper class="top-banner" autoplay="{{true}}" indicator-dots="{{true}}">
+    <swiper-item wx:for="{{banner}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+      <image class="banner" src="{{item.url}}"/>
+    </swiper-item>
+  </swiper>
+</view>

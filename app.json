@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "tabBar":{
+    "height":"100rpx",
+    "backgroundColor": "#F0F0F0",
+    "borderStyle": "white",
+    "selectedColor": "#00b38b",
+    "color": "#666666",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath":"static/img/zhurukou_003.png",
+        "selectedIconPath":"static/img/zhurukou_008.png",
+        "text":"商城"
+      },
+      {
+        "pagePath":"pages/logs/logs",
+        "iconPath":"static/img/zhurukou_005.png",
+        "selectedIconPath":"static/img/zhurukou_010.png",
+        "text":"我的"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
