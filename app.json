@@ -1,34 +1,42 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/my/my",
+    "pages/orderlist/orderlist",
+    "pages/good_info/good_info",
+    "pages/good_buy/good_buy",
+    "pages/good_address/good_address",
+    "pages/good_newaddress/good_newaddress",
+    "pages/my_address/my_address",
+    "pages/info/info",
+    "pages/orderinfo/orderinfo"
   ],
-  "tabBar":{
-    "height":"100rpx",
-    "backgroundColor": "#F0F0F0",
+  "tabBar": {
+    "height": "100rpx",
+    "backgroundColor": "#ffffff",
     "borderStyle": "white",
     "selectedColor": "#00b38b",
     "color": "#666666",
-    "list":[
+    "list": [
       {
-        "pagePath":"pages/index/index",
-        "iconPath":"static/img/zhurukou_003.png",
-        "selectedIconPath":"static/img/zhurukou_008.png",
-        "text":"商城"
+        "pagePath": "pages/index/index",
+        "iconPath": "static/img/zhurukou_003.png",
+        "selectedIconPath": "static/img/zhurukou_008.png",
+        "text": "商城"
       },
       {
-        "pagePath":"pages/logs/logs",
-        "iconPath":"static/img/zhurukou_005.png",
-        "selectedIconPath":"static/img/zhurukou_010.png",
-        "text":"我的"
+        "pagePath": "pages/my/my",
+        "iconPath": "static/img/zhurukou_005.png",
+        "selectedIconPath": "static/img/zhurukou_010.png",
+        "text": "我的"
       }
     ]
   },
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

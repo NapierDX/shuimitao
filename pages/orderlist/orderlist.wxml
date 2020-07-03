@@ -1,0 +1,39 @@
+<!--pages/orderlist/orderlist.wxml-->
+<view >
+    <view class="tab-box">
+		<view class="tab-item" catch:tap="check" data-i="0">
+			<image class="tab-img" src="{{check==0?'../../static/img/tubiao_001.png':'../../static/img/tubiao_002.png'}}"></image>
+			<view class="tab-tit" style="{{check==0?'color:rgba(249, 93, 57, 1)':''}}">全部订单</view>
+		</view>
+		<view class="tab-item" catch:tap="check" data-i="1">
+			<image class="tab-img" style="width: 49rpx;height: 47rpx;margin-top: 22rpx;" src="{{check==1?'../../static/img/tubiao_003.png':'../../static/img/tubiao_004.png'}}"></image>
+			<view class="tab-tit" style="{{check==1?'color:rgba(249, 93, 57, 1)':''}}">待付款</view>
+		</view>
+		<view class="tab-item" catch:tap="check" data-i="2">
+			<image class="tab-img" style="width: 55rpx;height: 45rpx;margin-top: 23rpx;" src="{{check==2?'../../static/img/tubiao_005.png':'../../static/img/tubiao_006.png'}}"></image>
+			<view class="tab-tit" style="{{check==2?'color:rgba(249, 93, 57, 1)':''}}">待收货</view>
+		</view>
+		<view class="tab-item" catch:tap="check" data-i="3">
+			<image class="tab-img" style="width: 54rpx;height: 49rpx;margin-top: 21rpx;" src="{{check==3?'../../static/img/tubiao_007.png':'../../static/img/tubiao_008.png'}}"></image>
+			<view class="tab-tit" style="{{check==3?'color:rgba(249, 93, 57, 1)':''}}">退款售后</view>
+		</view>
+	</view>
+
+	<scroll-view scroll-y="true" class="list-box" style="height:{{screenHeight}}rpx">
+		<block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+		<view class="list-item" catch:tap="to_info" data-i="{{item.id}}">
+			<view class="info-box">
+				<view class="info-state">待发货</view>
+				<image class="info-img" src="{{item.main_photo}}" mode="aspectFit"></image>
+				<view class="info-name">{{item.name}}</view>
+				<view class="info-num">X{{item.num}}</view>
+				<view class="info-price">实付：<text style="font-size: 20rpx;">￥</text>{{item.pay}}</view>
+			</view>
+			<view class="state-box">
+				<view class="state-time">{{item.addtime}}</view>
+				<button  class="state-btn" style="width:162rpx;height:53rpx;" ><view class="state-txt">查看物流</view></button>
+			</view>
+		</view>
+		</block>
+	</scroll-view>
+</view>

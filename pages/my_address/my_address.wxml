@@ -1,0 +1,16 @@
+<!--pages/my_address/my_address.wxml-->
+<view>
+	<view class="address-box" catch:tap="check" data-i="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+		<view class="address-name">{{item.name}}<text decode="true">&emsp;&emsp;&emsp;</text>{{item.phone}}<text decode="true">&emsp;</text>
+            <view wx:if="{{item.is_default==1}}" style="border:2rpx solid red;color:red;height:40rpx;border-radius:16rpx;padding-left:6rpx;padding-right:6rpx;">默认地址</view>
+        </view>
+		<view class="address-info">{{item.sheng+item.shi+item.qu+item.text}}</view>
+		<image class="point" src="{{check_num==index?'../../static/img/anjian_005.png':'../../static/img/anjian_006.png'}}"></image>
+	</view>
+	
+	<view class="btn-box">
+		<button class="btn-1" style="width:250rpx;" catch:tap="delete">删除</button>
+		<button class="btn-2" style="width:250rpx;" catch:tap="to_newaddress">添加新地址</button>
+	</view>
+</view>
+

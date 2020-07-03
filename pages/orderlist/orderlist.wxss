@@ -1,0 +1,185 @@
+page{
+	background:rgba(240,240,240,1);
+}
+
+.top-navi{
+	width: 750rpx;
+	height: 88rpx;
+	position: fixed;
+	background: rgba(255, 255, 255, 1);
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.top-back{
+    z-index:11;
+    position:absolute;
+    left: 24rpx;
+    bottom:14rpx;
+    width:60rpx;
+    height: 60rpx;
+}
+.top-text{
+	width: 750rpx;
+    display: block;
+    font-size:36rpx;
+    font-weight:400;
+    color:rgba(35, 35, 35, 1);
+    text-align: center;
+	position: absolute;
+	bottom: 21rpx;
+}
+
+.tab-box{
+	width:640rpx;
+	height:148rpx;
+	background:rgba(255,255,255,1);
+	border-radius:20rpx;
+	position: relative;
+	left: 25rpx;
+	margin-top: 20rpx;
+	display: flex;
+	flex-direction: row;
+	padding-left: 30rpx;
+	padding-right: 30rpx;
+}
+.tab-item{
+	width: 160rpx;
+	height: 148rpx;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+}
+.tab-img{
+	width:47rpx;
+	height:51rpx;
+	margin-top: 20rpx;
+	position: relative;
+}
+.tab-tit{
+	width: 160rpx;
+	font-size:24rpx;
+	font-weight:400;
+	color:rgba(150, 150, 150, 1);
+	position: absolute;
+	left: 0;
+	bottom: 30rpx;
+	text-align: center;
+}
+
+.list-box{
+	width: 725rpx;
+	position: relative;
+	margin-top: 20rpx;
+	left: 25rpx;
+}
+.list-item{
+	width:700rpx;
+	height:379rpx;
+	background:rgba(255,255,255,1);
+	border-radius:20rpx;
+	position: relative;
+	margin-bottom: 20rpx;
+}
+.info-box{
+	width: 642rpx;
+	height: 280rpx;
+	position: relative;
+	left: 35rpx;
+	border-bottom: 2rpx solid rgba(150, 150, 150, 0.3);
+}
+.info-tit{
+	font-size:24rpx;
+	font-weight:400;
+	color:rgba(35,35,35,1);
+	position: absolute;
+	left: 0;
+	top: 28rpx;
+}
+.info-state{
+	text-align: right;
+	font-size:24rpx;
+	font-weight:400;
+	color:rgba(150,150,150,1);
+	position: absolute;
+	right: 0;
+	top: 28rpx;
+}
+.info-img{
+	width:171rpx;
+	height:172rpx;
+	border-radius:10rpx;
+	position: absolute;
+	left: 0;
+	bottom: 31rpx;
+}
+.info-num{
+	height: 172rpx;
+	text-align: right;
+	line-height: 172rpx;
+	font-size:30rpx;
+	font-weight:400;
+	color:rgba(35,35,35,1);
+	position: absolute;
+	right: 0;
+	bottom: 31rpx;
+}
+.info-name{
+	width:287rpx;
+	height:52rpx;
+	font-size:24rpx;
+	font-weight:400;
+	color:rgba(35,35,35,1);
+	line-height: 26rpx;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	position: absolute;
+	left: 200rpx;
+	bottom: 138rpx;
+}
+.info-price{
+	font-size:24rpx;
+	font-weight:400;
+	color:rgba(35,35,35,1);
+	text-align: right;
+	position: absolute;
+	right: 0;
+	bottom: 44rpx;
+}
+.state-box{	
+	width: 642rpx;
+	height: 95rpx;	
+	position: relative;	
+	left: 35rpx;
+}
+.state-time{
+	font-size:24rpx;
+	font-weight:400;
+	color:rgba(150,150,150,1);
+	line-height: 95rpx;
+	position: relative;
+}
+.state-btn{
+	width:162rpx;
+	height:53rpx;
+	border:2rpx solid rgba(249,93,57,1);
+	border-radius:26rpx;
+	position: absolute;
+	top: 22rpx;
+	right: 0;
+}
+.state-txt{
+	width:162rpx;
+	height:53rpx;
+	font-size:24rpx;
+	font-weight:400;
+	color:rgba(249,93,57,1);
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 50rpx;
+}

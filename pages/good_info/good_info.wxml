@@ -1,0 +1,60 @@
+<!--pages/good_info/good_info.wxml-->
+<view>
+    <swiper class="swiper" indicator-dots="true" autoplay="true">
+		<swiper-item>
+			<image src="{{info.main_photo}}"  style="width: 100%;height: 100%;"></image>
+		</swiper-item>
+		<swiper-item wx:for="{{info.photos}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+			<image src="{{item}}"  style="width: 100%;height: 100%;"></image>
+		</swiper-item>
+	</swiper>
+
+    <view class="price-box">
+		<view class="price"><text style="font-size: 40rpx;">￥</text>{{info.price}}</view>
+		<view class="name"><view class="name-text">{{info.title}}</view></view>
+	</view>
+
+    <view class="info-tit">—<text decode="true">&emsp;</text>商品详情<text decode="true">&emsp;</text>—</view>
+
+    <view class="info-box">
+		<view style="height: 28rpx;"></view>
+		<rich-text nodes="{{info.content}}" class="info"></rich-text>
+		<view style="height: 28rpx;"></view>
+	</view>
+
+    <view style="height: 117rpx;width: 100%;"></view>
+	<view class="bottom-box">
+		<button class="cus" style="border:0;background:rgba(0,0,0,0);height: 97rpx;	width: 100rpx;left:10rpx" open-type="contact"></button>
+		<view class="cus">
+			<image class="cus-img" src="../../static/img/kefu.png"></image>
+			<view class="cus-txt">客服</view>
+		</view>
+		<view class="btn-box">
+			<view class="btn"  catch:tap="show_type" data-i="2">立即购买</view>
+		</view>
+	</view>
+
+    <view wx:if="{{showtype}}" style="height: 100%;width: 100%;z-index: 15;background: rgba(25,25,25,0.5);position: fixed;top: 0;left: 0;" catchtap="show_type" catchtouchmove="true">
+		<image class="count-cancel" src="../../static/img/cancel.png" catch:tap="show_type"></image>
+		<view class="count-cancel" style="width:56rpx;height:56rpx;bottom:580rpx;right:20rpx;z-index: 16" catch:tap="show_type"></view>
+		<view class="count-box" catchtap="none">
+			<view class="count-info">
+				<image class="count-img" src="{{info.main_photo}}"></image>
+				<view class="count-name">{{info.title}}</view>
+				<view class="count-price"><text style="font-size: 30rpx;">￥</text>{{info.price}}</view>
+			</view>
+
+			<view class="num-box">
+				数量
+				<view class="num-set">
+					<view class="num-cut" catch:tap="num_jian">-</view>
+					<view class="num">{{num_check}}</view>
+					<view class="num-cut" catch:tap="num_jia">+</view>
+				</view>
+			</view>
+			<button class="count-btn" catchtap="confirm">确定</button>
+			<view style="height:30rpx"></view>
+		</view>
+	</view>
+</view>
+  

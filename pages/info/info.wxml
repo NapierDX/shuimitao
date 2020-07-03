@@ -1,0 +1,4 @@
+<!--pages/info/info.wxml-->
+<view>
+    <image class="ig" src="../../static/img/timg.png" />
+</view>

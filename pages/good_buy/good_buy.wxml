@@ -1,0 +1,41 @@
+<!--pages/good_buy/good_buy.wxml-->
+<view>
+    <view wx:if="{{address.name}}" class="address" catch:tap="to_address">
+		<view class="address-name">{{address.name}}<text decode="true">&emsp;&emsp;&emsp;</text>{{address.phone}}</view>
+		<view class="address-info">{{address.sheng+address.shi+address.qu+address.text}}</view>
+		<view class="arrow"></view>
+	</view>
+	
+	<view wx:else class="address" catch:tap="to_address">
+		<image class="address-img" src="../../static/img/jinggao.png"></image>
+		<view class="address-tit">完善收货地址</view>
+		<view class="arrow"></view>
+	</view>
+
+    <view class="order-box">
+        <view class="good">
+			<image class="good-img" src="{{order.main_photo}}" />
+			<view class="good-name"><view class="good-name-text">{{order.name}}</view></view>
+			<view class="good-num">X{{order.num}}</view>
+			<view class="good-price"><text style="font-size: 30rpx;">￥</text>{{order.price}}</view>
+		</view>
+
+        <view class="sum-box">
+            <view style="height: 39rpx;"></view>
+            <view class="sum-item">
+				<view class="item-tit">商品金额</view>
+				<view class="item-num"><text style="font-size: 24rpx">￥</text>{{order.price}}</view>
+			</view>
+			<view class="sum-item">
+				<view class="item-tit">运费</view>
+				<view class="item-num"><text style="font-size: 24rpx">￥</text>{{freight}}</view>
+			</view>
+            <view style="height: 9rpx;"></view>
+        </view>
+
+        <view class="sum">实付：<text style="font-size: 24rpx">￥</text>{{order.price + freight}}</view>
+
+        <button class="btn" catch:tap="to_pay">微信支付</button>
+		<view style="height: 40rpx;"></view>
+    </view>
+</view>

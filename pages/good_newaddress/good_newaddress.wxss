@@ -1,0 +1,127 @@
+/* pages/good_newaddress/good_newaddress.wxss */
+page{
+	background:rgba(240,240,240,1);
+}
+
+.top-navi{
+	width: 750rpx;
+	height: 88rpx;
+	position: fixed;
+	background: rgba(255, 255, 255, 1);
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.top-back{
+    z-index:11;
+    position:absolute;
+    left: 24rpx;
+    bottom:14rpx;
+    width:60rpx;
+    height: 60rpx;
+}
+.top-text{
+	width: 750rpx;
+    display: block;
+    font-size:36rpx;
+    font-weight:400;
+    color:rgba(35, 35, 35, 1);
+    text-align: center;
+	position: absolute;
+	bottom: 21rpx;
+}
+
+.address-box{
+	width:700rpx;
+	height:356rpx;
+	background:rgba(255,255,255,1);
+	border-radius:20rpx;
+	position: relative;
+	left: 25rpx;
+	margin-top: 20rpx;
+}
+.line{
+	width:700rpx;
+	height: 78rpx;
+	position: relative;
+}
+.line-tit{
+	height: 78rpx;
+	line-height: 78rpx;
+	font-size:30rpx;
+	font-weight:400;
+	color:rgba(35,35,35,1);
+	position: relative;
+	left: 34rpx;
+}
+.line-input{
+	width: 468rpx;
+	height: 78rpx;
+	line-height: 78rpx;
+	font-size:30rpx;
+	font-weight:400;
+	position: absolute;
+	top: 0;
+	right: 23rpx;
+	border-bottom: 2rpx solid rgba(150, 150, 150, 1);
+}
+.arrow{
+	width: 15rpx;
+	height: 15rpx;
+	border-top: 2rpx solid rgba(35, 35, 35, 1);
+	border-right: 2rpx solid rgba(35, 35, 35, 1);
+	transform: rotate(135deg);
+	position: absolute;
+	bottom: 34rpx;
+	right: 17rpx;
+}
+
+.check-box{
+	width:700rpx;
+	height:116rpx;
+	background:rgba(255,255,255,1);
+	border-radius:20rpx;
+	position: relative;
+	left: 25rpx;
+	margin-top: 20rpx;
+}
+.check-tit{
+	height: 116rpx;
+	line-height: 116rpx;
+	font-size:30rpx;
+	font-weight:400;
+	color:rgba(35,35,35,1);
+	position: relative;
+	left: 34rpx;
+}
+.check{
+	height:50rpx;
+	position: absolute;
+	top: 33rpx;
+	right: 15rpx;
+}
+
+.btn-n{
+	width:343rpx;
+	height:66rpx;
+	background:rgba(150,150,150,1);
+	border-radius:33rpx;
+	position: relative;
+	margin-top: 95rpx;
+	line-height: 33rpx;
+	font-size:30rpx;
+	font-weight:400;
+	color:rgba(255,255,255,1);
+}
+.btn{
+	width:343rpx;
+	height:66rpx;
+	background:rgba(249, 93, 57, 1);
+	border-radius:33rpx;
+	position: relative;
+	margin-top: 95rpx;
+	line-height: 33rpx;
+	font-size:30rpx;
+	font-weight:400;
+	color:rgba(255,255,255,1);
+}

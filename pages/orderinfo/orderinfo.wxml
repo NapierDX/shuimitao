@@ -1,0 +1,40 @@
+<!--pages/orderinfo/orderinfo.wxml-->
+<view>
+    <view class="address-box">
+		<image class="address-img" src="../../static/img/tubiao_014.png"></image>
+		<view class="address-name">{{info.address.name}}<text decode="true">&emsp;</text>{{info.address.phone}}</view>
+		<view class="address">{{info.address.sheng+info.address.shi+info.address.qu+info.address.text}}</view>
+	</view>
+
+    <view class="info-box">
+        <view class="good">
+            <image class="good-img" src="{{info.main_photo}}" mode="aspectFit"></image>
+            <view class="good-name">{{info.name}}</view>
+            <view class="good-num">X{{info.num}}</view>
+            <view class="good-price"><text style="font-size: 30rpx;">￥</text>{{info.price}}</view>
+        </view>
+		<view class="detail">
+			<view wx:if="{{false}}">申请售后</view>
+			<button wx:if="{{false}}" class="good-btn" style="width:141rpx;border:0;background:rgba(0,0,0,0)" open-type="contact" bindcontact="handleContact"></button>
+			<view style="height: 20rpx;"></view>
+			<view class="detail-line">商品金额
+				<view class="detail-end"><text style="font-size: 24rpx;">￥</text>{{info.price}}</view>
+			</view>
+			<view class="detail-line">运费
+				<view class="detail-end"><text style="font-size: 24rpx;">￥</text>{{info.freight}}</view>
+			</view>
+			<view style="height: 20rpx;"></view>
+		</view>
+		<view class="sum">实付：<text style="font-size: 24rpx;">￥</text>{{info.price + info.freight}}</view>
+	</view>
+
+    <view class="order-box">
+		<view style="height: 15rpx;"></view>
+		<view class="order-line">订单编号：{{info.order_num}}</view>
+		<view class="order-line">下单时间：{{info.addtime}}</view>
+		<view class="order-line">支付方式：微信支付</view>
+	</view>
+
+    <view style="height: 155rpx;"></view>
+	<button class="btn" style="width:539rpx;" open-type="contact">联系客服</button>
+</view>

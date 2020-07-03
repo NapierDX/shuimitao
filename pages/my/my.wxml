@@ -1,0 +1,23 @@
+<view>
+    <view class="name-box">
+        <image class="avatar" src="" />
+        <view class="name">{{true?'请登录':user_nickname}}</view>
+    </view>
+
+    <view class="list-box">
+        <navigator class="line" target="" url="/pages/orderlist/orderlist" hover-class="navigator-hover" open-type="navigate">
+            <image class="line-img" src=""/>
+            <view class="line-box">我的订单</view>
+        </navigator>
+        <navigator class="line" target="" url="/pages/my_address/my_address" hover-class="navigator-hover" open-type="navigate">
+            <image class="line-img" src=""/>
+            <view class="line-box">收货地址</view>
+        </navigator>
+        <navigator class="line" target="" url="/pages/info/info" hover-class="navigator-hover" open-type="navigate">
+            <image class="line-img" src=""/>
+            <view class="line-box" style="border-bottom:0">关于我们</view>
+        </navigator>
+    </view>
+    
+</view>
+  

@@ -7,26 +7,15 @@
   </swiper>
   <scroll-view class="scroll" scroll-y="{{true}}" bindscrolltolower="getmore" style="height:{{list_height}}rpx">
     <view class="scroll-box">
-        <view class="good-box">
-          <image style="width:370rpx;position:relative;border-radius: 16rpx 16rpx 0 0;height:200rpx;background:rgba(150,150,150,1)" mode="aspectFit" />
-          <view class="name-box">
+        <block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+          <view class="good-box" catch:tap="to_info" data-i="{{item.id}}">
+            <image src="{{item.url}}" style="width:370rpx;position:relative;border-radius:  16rpx 16rpx 0 0;height:370rpx;background:rgba(150,150,150,1)" mode="aspectFit" />
+              <view class="good-name-box">
+                <view class="good-name"><view class="good-name-text">{{item.name}}</view></view>
+                <view class="good-price">￥{{item.price}}</view>
+              </view>
           </view>
-        </view>
-        <view class="good-box">
-          <image style="width:370rpx;position:relative;border-radius:  16rpx 16rpx 0 0;height:400rpx;background:rgba(150,150,150,1)" mode="aspectFit" />
-          <view class="name-box">
-          </view>
-        </view>
-        <view class="good-box">
-          <image style="width:370rpx;position:relative;border-radius:  16rpx 16rpx 0 0;height:290rpx;background:rgba(150,150,150,1)" mode="aspectFit" />
-          <view class="name-box">
-          </view>
-        </view>
-        <view class="good-box">
-          <image style="width:370rpx;position:relative;border-radius:  16rpx 16rpx 0 0;height:350rpx;background:rgba(150,150,150,1)" mode="aspectFit" />
-          <view class="name-box">
-          </view>
-        </view>
+        </block>
     </view>
     <view style="width:750rpx;height:60rpx"></view>
   </scroll-view>
